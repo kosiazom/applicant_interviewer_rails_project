@@ -1,0 +1,2 @@
+class InterviewApplicantsController < ApplicationController
+end
