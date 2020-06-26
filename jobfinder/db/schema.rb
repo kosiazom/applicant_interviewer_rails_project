@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_06_25_193512) do
   end
 
   create_table "interview_applicants", force: :cascade do |t|
-    t.integer "job_id"
+    t.integer "interview_id"
     t.integer "applicant_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
