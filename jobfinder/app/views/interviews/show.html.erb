@@ -1,0 +1,19 @@
+<h1>OMG! Look at this job opening! </h1>
+
+<%= @interview.job_title.capitalize%><br>
+<p> To apply, please fill out fields below</p>
+
+<%= form_tag interviews_path, method: "POST" do %>
+<label>Name:</label><br>
+  <%= text_field_tag :'applicant[name]' %><br>
+  <label>Email:</label><br>
+  <%= text_field_tag :'applicant[email]' %><br>
+
+  <label>Phone Number:</label><br>
+  <%=text_field_tag :'applicant[phone_number]' %><br>
+
+  <%=hidden_field_tag 'interview_id', @interview.id %> 
+ 
+ 
+  <%= submit_tag "Submit Application" %>
+<% end %>

@@ -8,4 +8,12 @@ class InterviewsController < ApplicationController
         @interview = Interview.find(params[:id])
     end
 
+    def new
+        
+    end
+
+    def create
+        byebug
+    end
+
 end
