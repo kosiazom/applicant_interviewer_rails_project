@@ -1,5 +1,5 @@
 <h1> OMG, look at all these Jobs </h1>
 
-<% @interviews.each do |job| %>
-    <%= link_to job.job_title, interviews_path(job) %><br>
+<% @interviews.each do |interview| %>
+    <%= link_to interview.job_title, interview_path(interview) %><br>
 <% end %>
