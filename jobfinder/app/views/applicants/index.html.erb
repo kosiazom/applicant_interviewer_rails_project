@@ -1,1 +1,5 @@
 <h1> Hello Applicants </h1>
+
+<% @applicants.each do |applicant| %>
+    <%= link_to applicant.name, applicants_path(applicant) %><br>
+<% end %> 
